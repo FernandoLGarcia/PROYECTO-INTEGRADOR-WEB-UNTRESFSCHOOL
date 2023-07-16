@@ -1,0 +1,117 @@
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #fc7300;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px;
+}
+
+section {
+    padding: 50px;
+    background-color: #eff5f5;
+    color: #181823;
+}
+
+section h1 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: #1f8a70;
+    padding: 20px;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.redes-sociales {
+    display: flex;
+}
+
+.nombre-escuela {
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    section {
+        padding: 30px;
+    }
+}
+
+        
+
+@media (max-width: 320px) {
+    section {
+        padding: 20px;
+    }
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    background-color: #FC7300;
+    color: #FFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #FF8C42;
+  }
+  
+  /* Estilos adicionales para ajustar el diseño según tus necesidades */
