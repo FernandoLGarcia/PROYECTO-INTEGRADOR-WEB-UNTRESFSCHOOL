@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Untref School" />
+    <meta name="author" content="Fernando Luis Garcia" />
     <title>Formulario Contacto</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style-contacto.css" />
+    <link rel="icon" type="image/png" href="img/gorrito.png" />
+    <link rel="stylesheet" href="css/style-contacto.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+          <a href="index.html">Inicio</a>
+      </nav>
+  </header>
+  <main>
+    <section class="Portada">
+        <h1>Contacto UntrefSchool</h1>
+    </section>
 
-    <!-- CORREGIR EL FORMULARIO CON LO QUE PIDE EN EL TP-->
+    <section class="formulario">
+        <form action="https://formsubmit.co/fernando179fg@gmail.com" method="POST">
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre completo" required/>
 
-    <form >
+            <label for="email">E-mail: </label>
+            <input type="email" name="correo" id="email" placeholder="Ingrese su dirección de e-mail" required/>
 
-          <div class="form-group">
-          <label for="nombre">Nombre y Apellido:</label>
-          <input type="text" id="nombre" name="nombre" required>
-        </div>
-      
-        <div class="form-group">
-          <label for="telefono">Teléfono:</label>
-          <input type="tel" id="telefono" name="telefono" required>
-        </div>
-      
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-      
-        <div class="form-group">
-          <label for="consulta">Consulta:</label>
-          <textarea id="consulta" name="consulta" required></textarea>
-        </div>
-      
-        <input type="submit" value="Enviar" class="submit-btn">
-      </form>
-      
-    
+            <label for="comentario">Comentario: </label>
+            <textarea name="comentario" id="comentario" cols="30" rows="5" placeholder="Ingrese su comentario"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</main>
 </body>
 </html>

@@ -1,117 +1,365 @@
-img {
-    width: 100%;
-    height: auto;
-}
-
-
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  background-color: #181823;
 }
 
-header{
-    background-color: #fc7300;
-    padding: 10px;
+header nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+a {
+  text-decoration: none;
+  color: #181823;
+  font-family: "Belanosima", sans-serif;
+  font-size: small;
+  text-align: center;
 }
 
-nav ul li {
-    display: inline;
+.nav a:hover {
+    color:#fc7300;
+    transition-duration: 0.5s;
+  }
+
+header {
+  display: grid;
+  grid-template-columns: repeat(2 1fr);
+  background-color:#fc7300;
+  padding: 0.3em;
+  position: sticky;
+  top: 0%;
 }
 
-nav ul li a {
-    color: #FFF;
-    text-decoration: none;
-    padding: 10px;
+
+
+.Portada h1 {
+  font-family: "Belanosima", sans-serif;
+  font-size: 3em;
+  font-weight: 400;
+  margin: 0%;
+  color:#EFF5F5;
+  text-shadow: #fc7300 3px 3px 3px;
+  align-items: end;
 }
 
-section {
-    padding: 50px;
-    background-color: #eff5f5;
-    color: #181823;
+section h2 {
+  font-family: "Poppins", sans-serif;
+  color: #181823;
+  margin-bottom: 0%;
 }
 
-section h1 {
-    margin-top: 0;
+section img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+section p {
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  margin: 0.5em;
+  font-size: small;
+  color: #EFF5F5;
+}
+
+section h3 {
+  font-family: "Poppins", sans-serif;
+  color:#EFF5F5;
+  margin-bottom: 0%;
+}
+
+.quienes-somos {
+  background-color: #fc7300;
+}
+
+.por-que-elegirnos {
+  background-color: #fc7300;
+}
+
+.por-que-elegirnos h2 {
+  color: #181823;
+}
+
+.por-que-elegirnos p {
+  color:#181823;
+}
+
+.propuesta-educativa {
+  background-color: #00425a;
+}
+
+.ultimas-noticias {
+  background-color: #181823;
+}
+
+.ultimas-noticias h2 {
+  color: #EFF5F5;
+}
+
+.ultimas-noticias dt {
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  margin: 0.5em;
+  margin-top: 1em;
+  color: #EFF5F5;
+}
+
+.ultimas-noticias dd {
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  margin-top: 0;
+  font-size: small;
+  color: #fc7300;
+}
+
+.ultimas-noticias dl {
+  margin: 0.5em;
 }
 
 footer {
-    background-color: #1f8a70;
-    padding: 20px;
-    color: #FFF;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  background-color: #fc7300;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  justify-items: center;
+  text-align: center;
 }
 
-.redes-sociales {
-    display: flex;
+footer h1 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 0.5em;
+  font-size: small;
+  color: #181823;
 }
 
-.nombre-escuela {
-    text-align: center;
+.untrefschool {
+  color: #181823;
+}
+
+footer p {
+  font-size: x-small;
+  text-align: center;
+  color: #181823;
+}
+
+.redes {
+  display: flex;
+  flex-direction: column;
+}
+
+footer img {
+  width: 20px;
+}
+
+section iframe {
+  width: 6em;
+  height: 6em;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    height: 25px;
+  }
+
+  a {
+    font-size: medium;
+  }
+
+  section p {
+    font-size: medium;
+  }
+
+  .quienes-somos {
+    padding: 0.5em;
+    display: grid;
+    grid-template-areas:
+      "h2 h2"
+      "img  p";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .quienes-somos > h2 {
+    grid-area: h2;
+  }
+
+  .quienes-somos p {
+    font-size: medium;
+  }
+
+  .por-que-elegirnos {
+    padding: 0.5em;
+    display: grid;
+    grid-template-areas:
+      "h2 h2"
+      "img p";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .por-que-elegirnos > h2 {
+    grid-area: h2;
+  }
+
+  .por-que-elegirnos p {
+    font-size: medium;
+  }
+
+  .propuesta-educativa {
+    padding: 0.5em;
+    display: grid;
+    grid-template-areas:
+      "h2 h2"
+      "h3 h3"
+      "img p"
+      "h3-2 h3-2"
+      "img-2 p-2";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .propuesta-educativa > h2 {
+    grid-area: h2;
+  }
+
+  .propuesta-educativa > h3 {
+    grid-area: h3;
+  }
+
+  .propuesta-educativa > img {
+    grid-area: img;
+  }
+
+  .propuesta-educativa > p {
+    grid-area: p;
+  }
+
+  .propuesta-educativa > .h3-2 {
+    grid-area: h3-2;
+  }
+
+  .propuesta-educativa > .img-2 {
+    grid-area: img-2;
+  }
+
+  .propuesta-educativa > .p-2 {
+    grid-area: p-2;
+  }
+
+  .ultimas-noticias {
+    padding: 0.5em;
+    display: grid;
+    grid-template-areas:
+      "h2 h2"
+      "img dl";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ultimas-noticias > h2 {
+    grid-area: h2;
+  }
+
+  .ultimas-noticias > img {
+    grid-area: img;
+    height: 100%;
+  }
+
+  .ultimas-noticias > dl {
+    grid-area: dl;
+  }
+
+  footer {
+    justify-content: space-around;
+  }
+
+  footer h1 {
+    font-size: medium;
+  }
+
+  footer p {
+    font-size: small;
+  }
+
+  footer img {
+    width: 30px;
+  }
+
+  section iframe {
+    width: 15em;
+    height: 6em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    padding: 2em;
+    display: grid;
+    grid-template-areas:
+      "portada portada"
+      "quienes-somos por-que-elegirnos"
+      "propuesta-educativa propuesta-educativa"
+      "ultimas-noticias ultimas-noticias";
+  }
+
+  main > .Portada {
+    grid-area: portada;
+  }
+
+  main > .quienes-somos {
+    grid-area: quienes-somos;
+  }
+
+  main > .por-que-elegirnos {
+    grid-area: por-que-elegirnos;
+  }
+
+  main > .propuesta-educativa {
+    grid-area: propuesta-educativa;
+  }
+
+  main > .ultimas-noticias {
+    grid-area: ultimas-noticias;
+  }
+
+  .quienes-somos {
+    display: grid;
+    grid-template-areas:
+      "h2 h2"
+      "img img"
+      "p p";
+  }
+
+  .quienes-somos > h2 {
+    grid-area: h2;
+  }
+
+  .quienes-somos > img {
+    grid-area: img;
+  }
+
+  .quienes-somos > p {
+    grid-area: p;
+  }
+
+  .por-que-elegirnos {
+    display: grid;
+    grid-template-areas:
+      "h2 h2"
+      "img img"
+      "p p";
+  }
+
+  .por-que-elegirnos > h2 {
+    grid-area: h2;
+  }
+
+  .por-que-elegirnos > img {
+    grid-area: img;
+  }
+
+  .por-que-elegirnos > p {
+    grid-area: p;
+  }
 }
 
 
-@media (max-width: 768px) {
-    section {
-        padding: 30px;
-    }
-}
-
-        
-
-@media (max-width: 320px) {
-    section {
-        padding: 20px;
-    }
-}
-
-.contact-form {
-    max-width: 400px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-    width: 100%;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input[type="text"],
-  input[type="tel"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  input[type="submit"] {
-    background-color: #FC7300;
-    color: #FFF;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #FF8C42;
-  }
-  
-  /* Estilos adicionales para ajustar el diseño según tus necesidades */
